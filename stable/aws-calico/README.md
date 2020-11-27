@@ -23,7 +23,7 @@ kubectl apply -k github.com/aws/eks-charts/tree/master/stable/aws-calico/crds
 To install the chart with the release name `aws-calico` and default configuration:
 
 ```shell
-$ helm install --name aws-calico --namespace kube-system eks/aws-calico
+helm install --name aws-calico --namespace kube-system eks/aws-calico
 ```
 
 To install into an EKS cluster where the CNI is already installed, you can run:
@@ -62,5 +62,5 @@ The following table lists the configurable parameters for this chart and their d
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install` or provide a YAML file containing the values for the above parameters:
 
 ```shell
-$ helm install --name aws-calico --namespace kube-system eks/aws-calico --values values.yaml
+helm install --name aws-calico --namespace kube-system eks/aws-calico --values values.yaml
 ```
